@@ -1,0 +1,13 @@
+services:
+  db:
+    container_name: tools-db
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: tools-db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      PGDATA: /data/postgres
+    volumes:
+      - ./data/pg:/data/postgres
