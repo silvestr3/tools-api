@@ -1,3 +1,4 @@
+import { Injectable } from '@nestjs/common';
 import { Tool } from '@prisma/client';
 import { PrismaService } from 'src/database/prisma.service';
 import {
@@ -5,6 +6,7 @@ import {
   ToolsRepository,
 } from 'src/database/repositories/tools-repository';
 
+@Injectable()
 export class PrismaToolsRepository implements ToolsRepository {
   constructor(private prisma: PrismaService) {}
 
