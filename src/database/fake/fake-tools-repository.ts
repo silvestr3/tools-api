@@ -9,6 +9,12 @@ export class FakeToolsRepository implements ToolsRepository {
     return this.tools;
   }
 
+  async findById(id: string): Promise<Tool | null> {
+    const tool = this.tools.find((tool) => tool.id === id);
+
+    return tool ?? null;
+  }
+
   async filterByTag(tag: string): Promise<Tool[]> {
     const tools = this.tools.filter((tool) => tool.tags.includes(tag));
 
