@@ -1,4 +1,4 @@
-import { FakeToolsRepository } from 'src/database/fake/fake-tools-repository';
+import { FakeToolsRepository } from 'src/database/repositories/fake/fake-tools-repository';
 import { CreateToolService } from './create-tool.service';
 
 describe('Filter tools by tag tests', () => {

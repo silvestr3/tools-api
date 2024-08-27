@@ -1,4 +1,4 @@
-import { FakeToolsRepository } from 'src/database/fake/fake-tools-repository';
+import { FakeToolsRepository } from 'src/database/repositories/fake/fake-tools-repository';
 import { ListAllToolsService } from './list-all-tools.service';
 
 describe('List all tools test', () => {

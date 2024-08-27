@@ -1,6 +1,6 @@
 import { ResourceNotFoundError } from './errors/resource-not-found-error';
 import { RemoveToolService } from './remove-tool.service';
-import { FakeToolsRepository } from 'src/database/fake/fake-tools-repository';
+import { FakeToolsRepository } from 'src/database/repositories/fake/fake-tools-repository';
 
 describe('Remove tool use case tests', () => {
   let toolsRepository: FakeToolsRepository;

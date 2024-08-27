@@ -1,5 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import { CreateTool, ToolsRepository } from 'src/database/tools-repository';
+import {
+  CreateTool,
+  ToolsRepository,
+} from 'src/database/repositories/tools-repository';
 
 @Injectable()
 export class CreateToolService {
